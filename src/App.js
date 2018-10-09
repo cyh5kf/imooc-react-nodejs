@@ -29,7 +29,7 @@ import { addGun, removeGun, addGunAsync } from './index.redux'
 // export default App;
 
 @connect(
-  state => ({num: state}),
+  store => ({num: store.counter}),
   { addGun, removeGun, addGunAsync }
 )
 class App extends Component {
