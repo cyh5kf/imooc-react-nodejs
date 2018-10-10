@@ -5,5 +5,3 @@ mongoose.connect(DB_URL);
 mongoose.connection.on('connected', function() {
     console.log('mongo connect success!');
 })
-
-// 类似于mysql的表，mongo里有文档的概念
